@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url("image/7-reasons-why-you-should-update-your-website.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 90px;
+    font-size: 17px;
+    padding: 8px;
+    }
+.container {
+    margin-left: 20%;
+    width: 60%;
+    color: #fff;
+    background-color: #0a060e3d;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid rgb(10, 8, 8);
+    border-radius: 8px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+        width: 97%;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 8px;
+        
+        margin: 10px;
+        box-shadow: 5px 5px 5px black;
+}
+fieldset{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.main_heading{
+    text-align: center;
+    text-shadow: 10px 10px 5px black;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    
+}
+p {
+    text-align: center;
+    /* text-shadow: 10px 10px 5px black; */
+}
+.sub_cls{
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    
+    background-color: rgba(37, 10, 61, 0.527);
+}
+input[type="submit"]{
+    font-weight: bolder;
+    width: 97%;
+    height: 40px;
+    margin: 10px;
+    background-color: rgba(37, 10, 61, 0.479);
+    color: white;
+    border: 2px solid rgba(55, 44, 65, 0.623);;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+input[type="submit"]:hover{
+       background-color:rgb(52, 35, 66);
+       
+}
+input[type="submit"]:visited{
+    background-color:rgb(37, 10, 61);       
+}
+

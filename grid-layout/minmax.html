@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmax function</title>
+    <style>
+        body{
+            font-family: arial,helvetica;
+        }
+         
+        h1{
+            padding: 0 0 0 40px;
+        }
+        .container{
+            background-color: #eee;
+            width: 80%;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: min-content 1fr 1fr minmax(50px,200px);
+            grid-template-rows: repeat(2, minmax(150px,min-content));
+            grid-gap: 5px;
+
+        }
+        .item1{
+            background-color: orangered;
+
+        }
+        .item2{
+            background-color: lawngreen;
+
+        }
+        .item3{
+            background-color: blueviolet;
+
+        }
+        .item4{
+            background-color: salmon;
+
+        }
+        .item5{
+            background-color: blue;
+
+        }
+        .item6{
+            background-color: hotpink;
+
+        }
+        .item7{
+            background-color: goldenrod;
+
+        }
+        .item8{
+            background-color: mediumspringgreen;
+
+        }
+
+        .items{
+            color: #fff; font-size: 20px; font-weight: bold;padding-left: 2%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>:css Grid MinMax() function</h1>
+
+    <div class="container">
+        <div class="items item1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nulla atque, non et doloribus possimus.</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four Lorem ipsum dolor sit amet consectetur adipisicing elit. A harum vero laudantium repellat numquam dolores qui minima officia voluptas voluptate!</div>
+        <div class="items item5">Five</div>
+        <div class="items item6">Six</div>
+        <div class="items item7">Seven
+        </div>
+        <div class="items item8">Eight</div>
+    </div>
+</body>
+</html>

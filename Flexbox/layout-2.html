@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-2</title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: arial;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            min-height: 100px;
+            margin: auto;
+        }
+        #logo-nav{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgray;
+            margin-bottom: 10px;
+
+        }
+        #logo{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 50%;
+            padding-left: 2%;
+            align-items: center;
+
+        }
+        #nav{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 50%;
+            padding-left: 2%;
+            align-items: center;
+
+        }
+        #header{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 100px;
+            background-color: lightgray;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        #intro{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 100px;
+            background-color: lightgray;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        #boxes{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 350px;
+            justify-content: space-between;
+        }
+        .box{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 30%;
+            background-color: lightgray;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+
+        }
+        #footer{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 100px;
+            background-color: lightgray;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+           <div id="logo-nav">
+              <div id="logo">
+                  Logo
+              </div>
+              <div id="nav">
+                  Navigation
+              </div>
+           </div>
+           <div id="header">
+            Header/Banner
+           </div>
+           <div id="intro">
+            Intro Text Area
+           </div>
+           <div id="boxes">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+           </div>
+           <div id="footer">
+                Footer
+           </div>
+    </div>
+
+</body>
+</html>

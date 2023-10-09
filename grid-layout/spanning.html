@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanning</title>
+    <style>
+        body{ font-family: arial,helvetica;}
+        h1{padding: 0 0 0 40px;}
+        .container{
+            background-color: #eee;
+            width: 700px;
+            margin: 50px 0 0 50px;
+           
+           
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4,120px);
+            grid-gap: 20px;
+
+        }
+         
+        .items1{
+            background-color: red;
+            grid-row-start: 2;
+            grid-column-start: 3;
+            grid-row-end: 3;
+            grid-column-end: 4;
+            z-index: 1;
+
+        }
+        .items2{
+            background-color: chartreuse;
+           grid-row: 2/ span 3;
+        }
+        .items3{
+            background-color: rebeccapurple;
+            
+        }
+        .items4{
+            background-color: salmon;
+            grid-column: 2/4;
+            grid-row: 2/3;
+            
+            
+        }
+        .items5{
+            background-color: slateblue;
+            
+        }
+        .items6{
+            background-color: goldenrod;
+            grid-row: 1/ 2;
+            grid-column: 1/ span 3;
+        }
+        .items{
+            color: #fff; font-size: 20px; font-weight: bold;padding-left: 2%;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <h1> :Spanning of Grid Items</h1>
+
+    <div class="container">
+        <div class="items items1">First</div>
+        <div class="items items2">Second</div>
+        <div class="items items3">Third</div>
+        <div class="items items4">Fourth</div>
+        <div class="items items5">Fifth</div>
+        <div class="items items6">Sixth</div>
+    </div>
+</body>
+</html>

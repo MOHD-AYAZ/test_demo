@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-1</title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: arial;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        #wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            min-height: 100px;
+            margin: auto;
+            /* background-color: olive; */
+        }
+        #logo{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 50px;
+            background-color: lightgray;
+            align-items: center;
+            padding: 2%;
+
+        }
+        #nav{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 30px;
+            background-color: lightgray;
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        #header{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 100px;
+            background-color: lightgray;
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        #main{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            min-height: 450px;
+            margin-top: 10px;
+            justify-content: space-between;
+
+        }
+        #left{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 20%;
+            background-color: lightgrey;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #right{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 75%;
+            background-color: lightgrey;
+            justify-content: center;
+            align-items: center;
+            }
+            #footer{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                min-height: 50px;
+                background-color: lightgray;
+                margin-top: 10px;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+    </style>
+</head>
+<body>
+        <div id="wrapper">
+            <div id="logo">
+                Logo
+
+            </div>
+            <div id="nav">
+                navigation
+            </div>
+            <div id="header">
+                Header/Banner
+            </div>
+            <div id="main">
+                <div id="left">
+                    Side bar
+                </div>
+                <div id="right">
+                    Body Area
+                </div>
+            </div>
+            <div id="footer">
+                Footer
+            </div>
+
+        </div>
+    
+</body>
+</html>
